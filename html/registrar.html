@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="EI=edge">
+    <title>Toyabijou | Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" type="../imagenes/logoverde.png" href="../imagenes/logoverde.png">
+</head>
+
+<body>
+<header > 
+    <nav>
+        <section class="navegador">
+            <div class="navegador-title-img">
+                <a class=""href="../index.html"><img class="navegador-img" src="../imagenes/logoblanco.jpg" alt=""></a>
+
+                <h1 class="navegador-title">ACCESORIOS Y PRENDAS UNISEX</h1>
+            </div>
+
+        </section>  
+    </nav>
+</header>
+
+
+
+<main>
+    <h2 class="promo-section-promociones">¡Ingresa tus datos y registrate para ser proveedor o recibir ofertas!</h2>
+        <section class="section-informacio-ingreso">
+                <form method= post action="/"></form>
+                    <fieldset class="section-registro">
+                        <legend class="legend1"> información Personal</legend>
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro">Nombres / Razon Social
+                                    <input class=busqueda type="text"
+                                    name="name"
+                                    placeholder="Ingresá acá tu nombre"
+                                    required>
+                                </label>
+                            </div>
+
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro">DNI / CUIT / CUIL
+                                    <input class=busqueda type="number"
+                                    name="name"
+                                    placeholder="N° doc. sin separaciones"
+                                    required>
+                                </label>
+                            </div>
+
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro" >Número de Teléfono
+                                    <input class=busqueda type="tel"
+                                    name="name"
+                                    placeholder="N° tel. sin separaciones"
+                                    required>
+                                </label>
+                            </div>
+
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro">E-Mail
+                                    <input class=busqueda type="email"
+                                    name="name"
+                                    placeholder="ingresá acá tu mail"
+                                    required>
+                                </label>
+                            </div>
+
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro">Contraseña
+                                    <input class=busqueda type="password"
+                                    name="name"
+                                    placeholder="Ingresá acá tu contraseña"
+                                    required>
+                                </label>
+                            </div>
+                    </fieldset>
+        
+
+        
+                <form method= post action="/"></form>
+                    <fieldset class="section-registro">
+                        <legend class="legend1"> Información Fiscal / Términos y Condiciones</legend>
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro" for="categoria">Categoría Fiscal</label>
+                                   <select name="catefisc" class="filtro">
+                                        <option>Consumidor Final</option>
+                                        <option>Responsable Inscripto</option>
+                                        <option>Iva Exento</option>
+                                        <option>Monotributo</option>
+                                   </select>
+                            </div>
+
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro" for="categoria">facturación</label>
+                                   <select name="catefisc" class="filtro">
+                                        <option>Factura B (Consumidor final)</option>
+                                        <option>Factura A</option>
+                                        <option>Factura C</option>
+                                        <option>Factura X</option>
+                                   </select>
+                            </div>
+
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro">¿Leiste y aceptas los <em class="termcond">términos</em> y <em class="termcond">condiciones</em> del servicio?</label>
+                                <label id="term">
+                                    <input type="checkbox" class="boxcheck"
+                                        name="terms"
+                                        >
+                               
+                                </label>  
+                            </div>
+
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro">Recibir Ofertas</label>
+                                    <input type="checkbox" class="boxcheck"
+                                    name="oferta"
+                                    >
+                           
+                            </div>
+                            
+                            <div class="contain-inpust-registro">
+                                <label class="etiquetas-registro">Ser proveedor</label>
+                                    <input type="checkbox" class="boxcheck"
+                                    name="proveedor"
+                                    >
+                    
+                            </div>
+
+                            <div>
+                                <button class="card-link submit-registro" type="submit">REGISTRAR</button>
+                            </div>
+
+        </section>
+</main>
+
+<footer>
+    <section class="section-footer">
+        
+        <div class="footer-options">
+            <img class="img-footer"src="../imagenes/logoblanco.jpg" alt="">
+        </div>
+            <ul class="footer-options">
+                <li class="footer-options-text">preguntas frecuentes</li>
+                <li class="footer-options-text">¿como comprar?</li>
+                <li class="footer-options-text">¿queres ser distribuidor?</li>
+            </ul>
+
+            <ul class="footer-options">
+                <li class="footer-options-text">atencion al clientes</li>
+                <li class="footer-options-text">informacion comercial</li>
+                <li class="footer-options-text">terminos y condiciones</li>
+            </ul>
+
+            <ul class="footer-options">
+                <li class="footer-options-text">ayudanos a mejorar</li>
+                <li class="footer-options-text">sé parte de nuestro equipo</li>
+                <li class="footer-options-text">capacitate para ser creador</li>
+            </ul>
+       
+    </section>
+</footer>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</html>
