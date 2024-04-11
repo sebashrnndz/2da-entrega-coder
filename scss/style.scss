@@ -1,0 +1,14 @@
+h1  {
+    background-color: aqua;
+    &:hover{
+        color: pink;
+    }
+}
+
+*   {
+    color: aqua;
+}
+
+img {
+    width: 10px;
+}

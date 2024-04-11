@@ -1,0 +1,16 @@
+h1 {
+  background-color: aqua;
+}
+h1:hover {
+  color: pink;
+}
+
+* {
+  color: aqua;
+}
+
+img {
+  width: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
