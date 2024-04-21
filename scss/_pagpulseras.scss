@@ -1,0 +1,193 @@
+
+.section-busqueda-filtro    {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 15px ;
+
+    .sticksec   {
+        display: flex;
+        align-items: center;
+        font-weight: 300;
+
+        .sticksection p{
+            margin: 0;
+            &:hover {
+                opacity: 90%;
+                cursor: pointer;
+            }
+        }  
+        .sticksection   {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            background-color: rgb(25,162,154) ;
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+            color: white;
+        }   
+    }
+}
+
+.section-filtro-busqueda    {
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin-right: 2rem;
+    .filters    {
+        display: flex;
+        background-color: rgb(25,162,154);
+        margin:5px;
+        border: none;
+        border-radius: 10px;
+        .div-filtro-busqueda    {
+            padding: 0.5rem 1rem;
+            .etiquetas   {
+                color: white;
+                padding: 0.5rem 0.5rem;
+            }
+            .filtro {
+                background-color:rgb(238, 238, 238);
+                border-radius: 7px;
+                font-family: "Lexend", sans-serif;
+                margin: 2px;
+                padding: 3px;
+                color: rgb(25,162,154);
+                border: 2px solid rgb(25,162,154);
+                transition: 0.2s;
+                &:hover   {
+                    background-color:rgb(219, 219, 219) ;
+                    cursor: pointer;
+                    }
+                } 
+            .enviar {
+                background-color:rgb(238, 238, 238) ;
+                border: 2px solid rgb(25,162,154);
+                border-radius: 7px;
+                margin: 2px;
+                padding: 3px;
+                color: rgb(25,162,154);
+                font-family: "Lexend", sans-serif;
+                transition: 0.2s ;
+                &:hover   {
+                    background-color: rgb(219, 219, 219);
+                    cursor: pointer;    
+                } 
+                .enviar:active  {
+                    background-color:rgb(185, 185, 185);
+                }    
+            }  
+            .busqueda   {
+                background-color:rgb(238, 238, 238);
+                border: none;
+                padding: 3px;
+                border-radius: 5px;
+                color: rgb(25,162,154) ;
+                .busqueda::placeholder  {
+                    color:  rgb(25,162,154);
+                    font-family: "Lexend", sans-serif;
+                    opacity: 50%;
+                }
+            }
+        }
+    }
+}
+
+.sectimg    {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0rem 2rem 0rem; 
+    .desingimg    {
+        display: flex;
+        flex-direction: column;
+        background-color:rgb(25,162,154);
+        margin: 50px;
+        width: 20rem;
+        height: 36rem;
+        border: 2px solid rgb(25,162,154);
+        border-radius: 5px;
+        .img-product    {
+            width: 100%;
+        }
+        .oferta-precio  {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin: 0rem 1rem 0rem 1rem;
+            border-top: 1.5px solid white;
+
+            .oferta {
+                color: rgb(207, 207, 207);
+                margin: 1rem;
+                text-decoration:line-through;
+                font-size: 1rem;
+                font-weight: 300;
+            }
+            .precio {
+                font-weight: 400;
+                border-bottom: 2px solid white;
+                margin: 1rem;
+                font-size: 1.3rem;
+            
+            }
+        }  
+        .card-link  {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            font-weight: 300;
+            border: 3px solid rgb(194, 194, 194);
+            background-color: rgb(194, 194, 194);
+            color: rgb(255, 255, 255);
+            border-radius: 10px;
+            transition: 0.2s;
+            cursor: pointer;
+            margin: 0.5rem;
+            &:hover    {
+                font-weight: 250;
+                background-color: rgb(27, 156, 148);
+            }
+        }
+        .title-promo1   {
+            display: flex;
+            justify-content: center;
+            padding-top: 1.2rem;   
+            font-weight: 350;
+            font-size: 1.5rem;
+        }    
+        .desc-prom1    {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 350;
+            padding: 0rem 1.1rem;
+        }   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

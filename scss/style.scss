@@ -1,14 +1,7 @@
-h1  {
-    background-color: aqua;
-    &:hover{
-        color: pink;
-    }
-}
-
-*   {
-    color: aqua;
-}
-
-img {
-    width: 10px;
-}
+@import "header.scss";
+@import "contenpagprincipal.scss";
+@import "footer.scss";
+@import "pagproductos.scss";
+@import "pagpulseras.scss";
+@import "pagregistro.scss";
+@import "pagpulserablanca.scss";

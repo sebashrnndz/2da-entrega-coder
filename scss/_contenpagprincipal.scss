@@ -1,0 +1,249 @@
+
+// PRESENTACION DE IMAGENES
+.imagenes-presentacion  {
+    background: linear-gradient( rgb(25, 162, 153),rgb(192, 171, 211));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    align-items: center;
+    justify-content: space-around; 
+    margin: 40px 0px 80px 0px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    inset: 0;
+
+    .imagenes-presentacion-diseño-ind   {
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        transition: .5s ease;
+
+        &:hover {
+            width: 40px;
+            opacity: 120%;
+            border-radius: 5px;
+        }
+    }
+}
+
+// TITULO PROMOCIONES
+.promo-section-promociones  {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    font-size: 1.4rem;
+    height: 6rem;
+    background-color:rgb(25,162,154);
+    margin: 0.7rem 0rem 0.7rem 0rem;  
+}
+
+// CONTENIDO DE PROMOCIONES
+.section-promociones   {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px;
+
+    .contain-promociones1    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgb(25,162,154);
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        margin: 2rem 0rem 2rem 0rem;
+
+        .title-promo1   {
+            display: flex;
+            justify-content: center;
+            padding-top: 1.2rem;   
+            font-weight: 350;
+            font-size: 1.5rem;
+        }
+        .img-promocion1    {
+            align-items: center;
+            width: 300px;
+            border-radius: 15px;
+            margin: 1.2rem;
+        }
+        .desc-prom1    {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 350;
+            padding: 0rem 1.1rem;
+        }
+        .button-prom1   {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1.1rem 1.1rem 1.5rem 1.1rem;
+            border: 1.5px solid rgb(255, 255, 255);
+            border-radius: 15px;
+            font-weight: 200;
+            &:hover     {
+                background-color: rgb(41, 160, 155);
+                cursor: pointer;
+                font-weight: 250;
+            }
+        }
+    }
+}
+
+// CONTENIDO DE ENVIOS, PAGOS Y REDES
+.section-envios {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,200px);
+    gap: 15px;
+    justify-content: space-between;
+    margin: 90px;
+    grid-template-areas: 
+    "mapa pago"
+    "mapa redes";
+
+    .title-envios   {
+        color: rgb(255, 255, 255);
+        margin: 1rem 0rem 1.1rem 4rem ;
+        border-bottom: 2px solid white;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        font-weight: 350;
+        font-size: 1.2rem;
+    }
+
+    .contain-envios {
+        grid-area: mapa;
+        border-radius: 5px;
+        background-color: rgb(25,162,154);
+        padding: 0rem 2rem 1rem 2rem;
+
+        .mapa-envios    {
+            width: 100%;
+            height: 60%;
+            border-radius: 5px;
+            border: 2px solid rgb(192, 171, 211);
+        }
+        .p1 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            margin-top: 8px;
+            font-weight: 350;
+        }
+        .p2 {
+            @extend .p1;
+            justify-content: center;
+        }
+        .p3 {
+            @extend .p1;
+            justify-content: end;
+        }
+    }
+    .contain-pago   {
+        grid-area: pago;
+        border-radius: 5px;
+        background-color:rgb(25,162,154);
+        padding: 0rem 2rem 1rem 2rem;
+        .img-pago-txt1  {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            margin-top: 8px;
+            font-weight: 350;
+        }
+        .img-pago-txt2  {
+            @extend .img-pago-txt1;
+            justify-content: center;
+        }
+        .img-pago-txt3  {
+            @extend .img-pago-txt1;
+            justify-content: end;
+        }
+        .img-pago{
+            width: 30px;
+            margin:0rem 1.02rem 0rem 0rem;
+        }   
+    }
+    .contain-redes {
+        grid-area: redes;
+        border-radius: 5px;
+        background-color: rgb(25,162,154);
+        padding: 0rem 2rem 1rem 2rem;
+        
+        .text-image-redes1   {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            margin-top: 8px;
+            font-weight: 350;
+            &:hover    {
+                cursor: pointer;
+            }
+        }
+        .text-image-redes2   {
+            @extend .text-image-redes1;
+            justify-content: center;
+        }
+        .text-image-redes3   {
+            @extend .text-image-redes1;
+            justify-content: end;
+        }
+        .redes  {
+            width: 30px;
+            margin:0rem 1.02rem 0rem 0rem;
+        }
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
