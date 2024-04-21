@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+*   {
+    margin: 0;
+    padding: 0;
+    font-family: "Lexend", sans-serif!important;
+}
+
+html{
+background-color: rgb(206, 206, 206)
+}
+
+p   {
+    font-weight: 200;
+}
+
+
+// barra navegable
+
+.navegador  {
+    background-color: rgb(25,162,154);
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .navegador-title-img  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+
+        .navegador-img  {
+            width: 120px;
+            display: flex;
+        }
+        .navegador-title {
+            display: flex;
+            color: rgb(252, 252, 252);
+            text-decoration-line:none ;
+            font-weight: 300;
+            font-size: 0.8rem;   
+        
+        }
+    }
+    .navegador-list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+
+        .navegador-link {
+            margin: 15px;
+
+            .navegador-link-desing   {
+                color: rgb(255, 255, 255);
+                text-decoration-line: none;
+                font-weight: 400;
+                align-items: center;
+
+                &:hover    {
+                    color:rgb(238, 238, 238) ;
+                }
+            }
+        }
+    }
+}
+
+.nav-bar-access-personal{
+    display: flex;
+
+    .access-personal {
+        width: 50px !important;
+        padding: 10px;
+
+        &:hover  {
+            cursor: pointer;
+        }
+    }
+}
+
+// Aviso de promocion 
+
+.stick {
+    position: sticky;
+    top:0px;
+    z-index: 1;
+
+    .promo  {
+        color: white;
+        display: grid;
+        place-content: center;
+        font-weight: 200;
+        font-size: 1.3rem;
+        background-color:rgb(25,162,154);
+        margin-top: 1px;
+        height: 2rem;
+
+        &:hover    {
+            color: white;
+            font-weight: 250;
+            background-color:rgb(41, 160, 155) ;
+            cursor: pointer;
+        }
+    }
+}
+
+//EXTEND
+// si despues del extend se agrega el nombre de una clase, la propiedad 
+// se hereda de esa clase al elemento que lleva anidado, EJEMPLO
+
+/*
+.section-promociones    {
+@extend .section-principal;
+y acá demás propiedades que sobre escribirian las propiedades
+heredadas
+*/
+
