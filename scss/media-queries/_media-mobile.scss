@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px) {
+
+//DISPLAY NONE PARA MOBILE 
+
+    .navegador  {
+    .navegador-title-img    {
+        .navegador-title    {
+            display: none;
+        }
+        .navegador-title-img    {
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+    }
+    .navegador-list {
+        display: none;
+    }
+    .nav-bar-access-personal    {
+        display: none;
+    }
+}
+.stick  {
+    display: none;
+}
+.imagenes-presentacion  {
+    display: none
+}
+
+.princ-carousel-mob-section {
+    margin: 2rem 1rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(97,97,97,0.56);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(97,97,97,0.56);
+    box-shadow: 0px 0px 24px 0px rgba(97,97,97,0.56);
+}
+
+}
