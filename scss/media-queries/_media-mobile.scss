@@ -2,23 +2,8 @@
 
 //DISPLAY NONE PARA MOBILE 
 
-    .navegador  {
-    .navegador-title-img    {
-        .navegador-title    {
-            display: none;
-        }
-        .navegador-title-img    {
-            justify-content: center;
-            align-items: center;
-            flex-wrap: nowrap;
-        }
-    }
-    .navegador-list {
-        display: none;
-    }
-    .nav-bar-access-personal    {
-        display: none;
-    }
+.navegador  {
+    display: none;
 }
 .stick  {
     display: none;
@@ -26,6 +11,11 @@
 .imagenes-presentacion  {
     display: none
 }
+.section-envios {
+    display: none;
+}
+
+// NUEVOS DISPLAYS PARA MOBILE
 
 .princ-carousel-mob-section {
     margin: 2rem 1rem;
@@ -34,5 +24,68 @@
     -moz-box-shadow: 0px 0px 24px 0px rgba(97,97,97,0.56);
     box-shadow: 0px 0px 24px 0px rgba(97,97,97,0.56);
 }
+.navbar {
+    --bs-navbar-toggler-focus-width: 0;
+    padding: 0;
+    .navbar-brand   {
+        justify-content: center;
+        align-items: center;
+    }
+    .container-fluid   {
+        background-color: rgb(25,162,154);
+        .navegador-img-mob  {
+            width: 100px;
+        }
+        .navbar-toggler {
+            background-color: white;
+            &hover  {
+                background-color: aqua !important;
+            }
+        }
+            .navbar-toggler-icon   {
+                background-color: white;
+            } 
+        .nav-link   {
+            color: white;
+            border-radius: 10px;
+            margin: 0.25rem;
+            padding: 1rem 0.5rem;
+            transition: 1s;
+            &:hover {
+                background: linear-gradient(to right, rgba(255, 255, 255, 0.123), rgba(255, 255, 255, 0)) !important;
+            }
+        }
+    }
+}
+.info-princ-mob {
+    color: white;
+    text-align: center;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0rem 4rem 0rem;
+    background-color: rgb(25,162,154);
+    font-weight: 300;
+    font-size: 14px;
+    -webkit-box-shadow: 0px 0px 24px 0px rgba(97,97,97,0.56);
+    -moz-box-shadow: 0px 0px 24px 0px rgba(97,97,97,0.56);
+    box-shadow: 0px 0px 24px 0px rgba(97,97,97,0.56);
+}
+
+.section-footer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+    .footer-options {
+        margin: 0 !important;
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        .footer-options-text    {
+            margin: 10px;
+            text-align: center;
+        }
+    }
+}
+
+
 
 }
