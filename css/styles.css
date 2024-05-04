@@ -137,7 +137,7 @@ heredadas
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 50px;
+  margin: 50px 0px;
 }
 .section-promociones .contain-promociones1 {
   display: flex;
@@ -172,15 +172,19 @@ heredadas
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.1rem 1.1rem 1.5rem 1.1rem;
-  border: 1.5px solid rgb(255, 255, 255);
-  border-radius: 15px;
-  font-weight: 200;
+  text-decoration: none;
+  font-weight: 300;
+  border: 3px solid rgb(194, 194, 194);
+  background-color: rgb(194, 194, 194);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  transition: 0.2s;
+  cursor: pointer;
+  margin: 1rem;
 }
 .section-promociones .contain-promociones1 .button-prom1:hover {
-  background-color: rgb(41, 160, 155);
-  cursor: pointer;
   font-weight: 250;
+  background-color: rgb(27, 156, 148);
 }
 
 .section-envios {
@@ -868,9 +872,12 @@ footer .section-footer .footer-options .footer-options-text:hover {
   .princ-carousel-mob-section {
     margin: 2rem 1rem;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 24px 0px rgba(97, 97, 97, 0.56);
-    -moz-box-shadow: 0px 0px 24px 0px rgba(97, 97, 97, 0.56);
-    box-shadow: 0px 0px 24px 0px rgba(97, 97, 97, 0.56);
+    -webkit-box-shadow: 0px 0px 22px 7px rgb(41, 160, 155);
+    -moz-box-shadow: 0px 0px 22px 7px rgb(41, 160, 155);
+    box-shadow: 0px 0px 22px 7px rgb(41, 160, 155);
+  }
+  .princ-carousel-mob-section .d-block {
+    border-radius: 10px;
   }
   .navbar {
     --bs-navbar-toggler-focus-width: 0;
@@ -900,7 +907,7 @@ footer .section-footer .footer-options .footer-options-text:hover {
     border-radius: 10px;
     margin: 0.25rem;
     padding: 1rem 0.5rem;
-    transition: 1s;
+    transition: 1s !important;
   }
   .navbar .container-fluid .nav-link:hover {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.123), rgba(255, 255, 255, 0)) !important;
