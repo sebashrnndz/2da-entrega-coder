@@ -104,14 +104,4 @@ p   {
     }
 }
 
-//EXTEND
-// si despues del extend se agrega el nombre de una clase, la propiedad 
-// se hereda de esa clase al elemento que lleva anidado, EJEMPLO
-
-/*
-.section-promociones    {
-@extend .section-principal;
-y acá demás propiedades que sobre escribirian las propiedades
-heredadas
-*/
 
