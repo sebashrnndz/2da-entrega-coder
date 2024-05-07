@@ -15,6 +15,11 @@
     display: none;
 }
 
+.contain-carousel-descripcion   {
+    display: none;
+}
+
+
 // NUEVOS DISPLAYS PARA MOBILE
 
 .princ-carousel-mob-section {
@@ -156,6 +161,146 @@ box-shadow: 0px 0px 22px 7px rgba(41,160,155,1);
         }
     }
 }
+
+
+ // DISEÑO MOBILE DE SECTION ENVIOS PAGINA PRINCIPAL
+ .title-section-envios-mob  {
+    font-weight: 300;
+    font-size: 24px;
+    height: 8rem;
+    align-content: center;
+    text-align: center;
+    color: rgb(25,162,154);
+    background: radial-gradient(rgba(25, 163, 154, 0.295), rgba(25, 162, 153, 0));
+    cursor: default;
+ }
+
+ .section-envios-mob {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .div-card-envios-mob    {
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        width: 21.5rem;
+        height: 15rem;
+        margin: 1.5rem 1rem;
+        padding: 1.5rem 2rem;
+        border-radius: 10px;
+        background-color: rgb(25,162,154);
+        cursor: default;
+        -webkit-box-shadow: 0px 0px 62px -3px rgba(25,162,154,0.33);
+        -moz-box-shadow: 0px 0px 62px -3px rgba(25,162,154,0.33);
+        box-shadow: 0px 0px 62px -3px rgba(25,162,154,0.33);
+        .title-envios-mob   {
+        color: white;  
+        font-size: 1.3rem;
+        font-weight: 300;
+        border-bottom: 2px solid white;
+        }
+        .list-detail-mob    {
+            list-style-type: none;
+            font-size: 14px;
+            font-weight: 300;
+            color: white;
+            margin: 1rem;
+            .img-list-mob   {
+                width: 30px;
+                margin-right: 1rem;
+            }
+        }
+        .list-envios-mob    {
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+
+// DISEÑO DE PAGINA DE COMPRA / PULSERA BLANCA PARA MOBILE
+
+// PRESENTACION DE IMAGENES PARA VISTA MOBILE
+
+.img-section-mob    {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .div-container-img-mob  {
+        padding: 0.6rem;
+        background: #19a29a;
+        background: linear-gradient(90deg, rgba(25,162,154,1) 0%, rgba(48,255,244,1) 50%, rgba(25,162,154,1) 100%);
+        border-radius: 10px;
+        -webkit-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+        -moz-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+        box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+        .carousel-inner  {
+            border-radius: 10px;
+        }  
+    }
+}
+
+.section-precios-producto-mob   {
+    margin: 3rem 2rem 2rem 2rem;
+    .div-container-precios-mob  {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background: rgb(25,162,154);
+        background: linear-gradient(90deg, rgba(25,162,154,1) 0%, rgba(48,255,244,1) 50%, rgba(25,162,154,1) 100%);
+        -webkit-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+        -moz-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+        box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+        .diseño-title-precio-mob    {
+            margin: 0;
+            position: relative;
+            bottom: 1.8rem;
+            color: rgb(25,162,154);
+            color: linear-gradient(90deg, rgba(25,162,154,1) 0%, rgba(48,255,244,1) 50%, rgba(25,162,154,1) 100%);
+            -webkit-box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
+            -moz-box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
+            box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
+            font-style: italic;
+            font-weight: 600;
+            font-size: 24px;
+        }
+        .diseño-precios-mob p {
+            margin: 0;
+            color: rgb(17,102,97);
+            color: linear-gradient(90deg, rgba(17,102,97,1) 0%, rgba(29,198,188,1) 99%);
+            font-weight: 400;
+            font-size: 18px;
+            font-style: italic;
+            text-decoration: line-through;
+        }
+        .diseño-precios-final-mob p  {
+            margin: 0;
+            color: rgb(20,133,126);
+            color: linear-gradient(90deg, rgba(20,133,126,1) 10%, rgba(25,162,154,1) 50%, rgba(25,162,154,1) 70%, rgba(48,255,243,1) 100%);
+            font-style: italic;
+            font-weight: 500;
+            font-size: 20px;
+            
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }

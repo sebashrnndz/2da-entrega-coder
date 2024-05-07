@@ -916,6 +916,9 @@ footer .section-footer .footer-options .footer-options-text:hover {
   .section-envios {
     display: none;
   }
+  .contain-carousel-descripcion {
+    display: none;
+  }
   .princ-carousel-mob-section {
     margin: 2rem 1rem;
     border-radius: 10px;
@@ -1047,6 +1050,120 @@ footer .section-footer .footer-options .footer-options-text:hover {
     width: 50%;
     height: 1.4rem;
     font-size: 12px;
+  }
+  .title-section-envios-mob {
+    font-weight: 300;
+    font-size: 24px;
+    height: 8rem;
+    align-content: center;
+    text-align: center;
+    color: rgb(25, 162, 154);
+    background: radial-gradient(rgba(25, 163, 154, 0.295), rgba(25, 162, 153, 0));
+    cursor: default;
+  }
+  .section-envios-mob {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .section-envios-mob .div-card-envios-mob {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 21.5rem;
+    height: 15rem;
+    margin: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    background-color: rgb(25, 162, 154);
+    cursor: default;
+    -webkit-box-shadow: 0px 0px 62px -3px rgba(25, 162, 154, 0.33);
+    -moz-box-shadow: 0px 0px 62px -3px rgba(25, 162, 154, 0.33);
+    box-shadow: 0px 0px 62px -3px rgba(25, 162, 154, 0.33);
+  }
+  .section-envios-mob .div-card-envios-mob .title-envios-mob {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    border-bottom: 2px solid white;
+  }
+  .section-envios-mob .div-card-envios-mob .list-detail-mob {
+    list-style-type: none;
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    margin: 1rem;
+  }
+  .section-envios-mob .div-card-envios-mob .list-detail-mob .img-list-mob {
+    width: 30px;
+    margin-right: 1rem;
+  }
+  .section-envios-mob .div-card-envios-mob .list-envios-mob {
+    padding: 0;
+    margin: 0;
+  }
+  .img-section-mob {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-section-mob .div-container-img-mob {
+    padding: 0.6rem;
+    background: #19a29a;
+    background: linear-gradient(90deg, rgb(25, 162, 154) 0%, rgb(48, 255, 244) 50%, rgb(25, 162, 154) 100%);
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    -moz-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+  }
+  .img-section-mob .div-container-img-mob .carousel-inner {
+    border-radius: 10px;
+  }
+  .section-precios-producto-mob {
+    margin: 3rem 2rem 2rem 2rem;
+  }
+  .section-precios-producto-mob .div-container-precios-mob {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(25, 162, 154);
+    background: linear-gradient(90deg, rgb(25, 162, 154) 0%, rgb(48, 255, 244) 50%, rgb(25, 162, 154) 100%);
+    -webkit-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    -moz-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+  }
+  .section-precios-producto-mob .div-container-precios-mob .diseño-title-precio-mob {
+    margin: 0;
+    position: relative;
+    bottom: 1.8rem;
+    color: rgb(25, 162, 154);
+    color: linear-gradient(90deg, rgb(25, 162, 154) 0%, rgb(48, 255, 244) 50%, rgb(25, 162, 154) 100%);
+    -webkit-box-shadow: 0px 0px 46px -200px rgb(158, 158, 158);
+    -moz-box-shadow: 0px 0px 46px -200px rgb(158, 158, 158);
+    box-shadow: 0px 0px 46px -200px rgb(158, 158, 158);
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  .section-precios-producto-mob .div-container-precios-mob .diseño-precios-mob p {
+    margin: 0;
+    color: rgb(17, 102, 97);
+    color: linear-gradient(90deg, rgb(17, 102, 97) 0%, rgb(29, 198, 188) 99%);
+    font-weight: 400;
+    font-size: 18px;
+    font-style: italic;
+    text-decoration: line-through;
+  }
+  .section-precios-producto-mob .div-container-precios-mob .diseño-precios-final-mob p {
+    margin: 0;
+    color: rgb(20, 133, 126);
+    color: linear-gradient(90deg, rgb(20, 133, 126) 10%, rgb(25, 162, 154) 50%, rgb(25, 162, 154) 70%, rgb(48, 255, 243) 100%);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {
