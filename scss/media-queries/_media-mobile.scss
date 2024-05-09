@@ -18,6 +18,15 @@
 .contain-carousel-descripcion   {
     display: none;
 }
+.section-detalles   {
+    display: none;
+}
+.section-mapa-detalle   {
+    display: none;
+}
+.section-rel-products   {
+    display: none;
+}
 
 
 // NUEVOS DISPLAYS PARA MOBILE
@@ -223,7 +232,7 @@ box-shadow: 0px 0px 22px 7px rgba(41,160,155,1);
 // PRESENTACION DE IMAGENES PARA VISTA MOBILE
 
 .img-section-mob    {
-    margin: 2rem;
+    margin: 3rem 2rem 0.5rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,33 +251,32 @@ box-shadow: 0px 0px 22px 7px rgba(41,160,155,1);
 }
 
 .section-precios-producto-mob   {
-    margin: 3rem 2rem 2rem 2rem;
+    margin: 0rem 2rem 2rem 2rem;
+    .diseño-title-precio-mob    {
+        margin: 0;
+        text-align: center;
+        color: rgb(25,162,154);
+        color: linear-gradient(90deg, rgba(25,162,154,1) 0%, rgba(48,255,244,1) 50%, rgba(25,162,154,1) 100%);
+        -webkit-box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
+        -moz-box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
+        box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
+        font-style: italic;
+        font-weight: 600;
+        font-size: 18px;
+    }
     .div-container-precios-mob  {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
-        background: rgb(25,162,154);
-        background: linear-gradient(90deg, rgba(25,162,154,1) 0%, rgba(48,255,244,1) 50%, rgba(25,162,154,1) 100%);
         -webkit-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
         -moz-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
         box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
-        .diseño-title-precio-mob    {
-            margin: 0;
-            position: relative;
-            bottom: 1.8rem;
-            color: rgb(25,162,154);
-            color: linear-gradient(90deg, rgba(25,162,154,1) 0%, rgba(48,255,244,1) 50%, rgba(25,162,154,1) 100%);
-            -webkit-box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
-            -moz-box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
-            box-shadow: 0px 0px 46px -200px rgba(158,158,158,1);
-            font-style: italic;
-            font-weight: 600;
-            font-size: 24px;
-        }
-        .diseño-precios-mob p {
-            margin: 0;
+        background: rgb(20,133,126);
+        background: linear-gradient(90deg, rgba(20,133,126,1) 20%, rgba(25,162,154,1) 40%, rgba(48,255,243,1) 60%, rgba(25,162,154,1) 95%);
+         .diseño-precios-mob p {
+            margin: 0rem 2rem;
             color: rgb(17,102,97);
             color: linear-gradient(90deg, rgba(17,102,97,1) 0%, rgba(29,198,188,1) 99%);
             font-weight: 400;
@@ -277,19 +285,193 @@ box-shadow: 0px 0px 22px 7px rgba(41,160,155,1);
             text-decoration: line-through;
         }
         .diseño-precios-final-mob p  {
-            margin: 0;
+            margin: 0rem 2rem;
             color: rgb(20,133,126);
             color: linear-gradient(90deg, rgba(20,133,126,1) 10%, rgba(25,162,154,1) 50%, rgba(25,162,154,1) 70%, rgba(48,255,243,1) 100%);
             font-style: italic;
             font-weight: 500;
-            font-size: 20px;
-            
-            
+            font-size: 20px; 
         }
+    }
+    .div-container-options-mob  {
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0rem;
+        .div-ind-mob    {
+            color: white;
+            font-size: 14px;
+            padding: 4px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            width: 49.5%;
+            background: #19a29a;
+            background: linear-gradient(90deg, rgba(25,162,154,1) 0%, rgb(41, 223, 214) 20%, rgba(25,162,154,1) 50%, rgba(20,133,126,1) 80%);
+            .option-envios-mob{  
+                text-align: center; 
+                color: white;
+                width: 60%;
+                border: none;
+                border-radius: 25px;
+                background: rgb(25,162,154);
+                background: radial-gradient(circle, rgba(25,162,154,0.6864784546805349) 50%, rgba(195,224,223,0.3283803863298663) 100%);}
+        }
+    }
+    .btn-compra-mob {
+        width: 100%;
+        color: white;
+        border: 2px solid #19a29a;
+        padding: 4px;
+        border-radius: 10px;
+        background: #19a29a;
+        background: linear-gradient(90deg, rgba(25,162,154,1) 20%, rgb(41, 223, 214) 40%,rgb(41, 223, 214) 60%, rgba(25,162,154,1) 80%);
+        transition: 0.4s;
+    }
+    .btn-compra-mob:hover     {
+        color: #b3b3b3;
+        border: 2px solid #7e7e7e;
     }
 }
 
+// SECCION DE PAGOS MOBILE
 
+.section-pagos-mob  {
+    display: flex;
+    margin: 0rem 2rem 2rem 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .apartado-pagos-mob {
+        display: flex;
+        flex-direction: column;
+        width: 49%;
+        font-size: 12px;
+        color: white;
+        padding: 1rem;
+        border-radius: 10px;
+        background: #19a29a;
+        & h4    {
+            font-size: 18px;
+            border-bottom: 2px solid white;
+        }
+        .contain-cuotas-mob {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .img-pagos-mob  {
+                width: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+            .cuota-mob  {
+                text-align: center;
+                margin: 6px;
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }    
+    }
+}
+
+.section-mapa-detalle-mob   {
+    color: white;
+    margin: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #19a29a;
+    -webkit-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+    -moz-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+    box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+    .title-detalles-envios-mob  {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        margin: 20px 0px;
+        .img-envios-mob {
+            width: 25px;
+            margin: 0rem 1rem 0rem 0rem;
+        }
+    }
+    .contenido-envios-mob   {
+        font-size: 14px;
+        font-weight: 250;
+    }
+}
+
+.apartado-mapa-detalle-mob  {
+    background-color: #19a29a;
+    color: white;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+    .title-mapa-mob {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+    .mapa-envios-final-mob  {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid rgb(194, 194, 194);
+        -webkit-box-shadow: 0px 0px 12px 2px rgba(199,199,199,1);
+        -moz-box-shadow: 0px 0px 12px 2px rgba(199,199,199,1);
+        box-shadow: 0px 0px 12px 2px rgba(199,199,199,1);
+    }
+}
+
+.section-rel-products-mob   {
+    color: white;
+    background-color: #19a29a;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+    -moz-box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+    box-shadow: 0px 0px 46px 2px rgba(158,158,158,1);
+    .apartado-rel-products-mob  {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        .flex-contain-rel-products-mob  {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .rel-products-details-mob   {
+                width: 45%;
+                border-radius: 10px;
+                border: 2px solid white;
+                text-align: center;
+                font-size: 16px;
+                & p {
+                    margin: 1rem 0rem;
+                }
+                .img-rel-product-mob    {
+                    width: 90%;
+                    border-radius: 10px;
+                }
+                .rel-product-button-mob {
+                    width: 80%;
+                    color: white;
+                    padding: 4px;
+                    border-radius: 10px;
+                    margin: 1rem;
+                    border: 2px solid rgb(182, 182, 182);
+                    background-color: #19a29a;
+                    transition: 0.2s;
+                    &:hover {
+                        color: #19a29a;
+                        background-color: #b3b3b3;
+                        
+                    }
+                }
+
+            }
+
+        }
+
+    }
+}
 
 
 

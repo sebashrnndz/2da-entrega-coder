@@ -277,59 +277,6 @@ p {
   margin: 0rem 1.02rem 0rem 0rem;
 }
 
-.title-section-envios-mob {
-  font-weight: 300;
-  font-size: 24px;
-  height: 8rem;
-  align-content: center;
-  text-align: center;
-  color: rgb(25, 162, 154);
-  background: radial-gradient(rgba(25, 163, 154, 0.295), rgba(25, 162, 153, 0));
-  cursor: default;
-}
-
-.section-envios-mob {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.section-envios-mob .div-card-envios-mob {
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  width: 21.5rem;
-  height: 15rem;
-  margin: 1.5rem 1rem;
-  padding: 1.5rem 2rem;
-  border-radius: 10px;
-  background-color: rgb(25, 162, 154);
-  cursor: default;
-  -webkit-box-shadow: 0px 0px 62px -3px rgba(25, 162, 154, 0.33);
-  -moz-box-shadow: 0px 0px 62px -3px rgba(25, 162, 154, 0.33);
-  box-shadow: 0px 0px 62px -3px rgba(25, 162, 154, 0.33);
-}
-.section-envios-mob .div-card-envios-mob .title-envios-mob {
-  color: white;
-  font-size: 1.3rem;
-  font-weight: 300;
-  border-bottom: 2px solid white;
-}
-.section-envios-mob .div-card-envios-mob .list-detail-mob {
-  list-style-type: none;
-  font-size: 14px;
-  font-weight: 300;
-  color: white;
-  margin: 1rem;
-}
-.section-envios-mob .div-card-envios-mob .list-detail-mob .img-list-mob {
-  width: 30px;
-  margin-right: 1rem;
-}
-.section-envios-mob .div-card-envios-mob .list-envios-mob {
-  padding: 0;
-  margin: 0;
-}
-
 footer {
   background-color: rgb(25, 162, 154);
   padding: 2rem;
@@ -919,6 +866,15 @@ footer .section-footer .footer-options .footer-options-text:hover {
   .contain-carousel-descripcion {
     display: none;
   }
+  .section-detalles {
+    display: none;
+  }
+  .section-mapa-detalle {
+    display: none;
+  }
+  .section-rel-products {
+    display: none;
+  }
   .princ-carousel-mob-section {
     margin: 2rem 1rem;
     border-radius: 10px;
@@ -1103,7 +1059,7 @@ footer .section-footer .footer-options .footer-options-text:hover {
     margin: 0;
   }
   .img-section-mob {
-    margin: 2rem;
+    margin: 3rem 2rem 0.5rem 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1121,24 +1077,11 @@ footer .section-footer .footer-options .footer-options-text:hover {
     border-radius: 10px;
   }
   .section-precios-producto-mob {
-    margin: 3rem 2rem 2rem 2rem;
+    margin: 0rem 2rem 2rem 2rem;
   }
-  .section-precios-producto-mob .div-container-precios-mob {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background: rgb(25, 162, 154);
-    background: linear-gradient(90deg, rgb(25, 162, 154) 0%, rgb(48, 255, 244) 50%, rgb(25, 162, 154) 100%);
-    -webkit-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
-    -moz-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
-    box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
-  }
-  .section-precios-producto-mob .div-container-precios-mob .diseño-title-precio-mob {
+  .section-precios-producto-mob .diseño-title-precio-mob {
     margin: 0;
-    position: relative;
-    bottom: 1.8rem;
+    text-align: center;
     color: rgb(25, 162, 154);
     color: linear-gradient(90deg, rgb(25, 162, 154) 0%, rgb(48, 255, 244) 50%, rgb(25, 162, 154) 100%);
     -webkit-box-shadow: 0px 0px 46px -200px rgb(158, 158, 158);
@@ -1146,10 +1089,22 @@ footer .section-footer .footer-options .footer-options-text:hover {
     box-shadow: 0px 0px 46px -200px rgb(158, 158, 158);
     font-style: italic;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 18px;
+  }
+  .section-precios-producto-mob .div-container-precios-mob {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    -moz-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    background: rgb(20, 133, 126);
+    background: linear-gradient(90deg, rgb(20, 133, 126) 20%, rgb(25, 162, 154) 40%, rgb(48, 255, 243) 60%, rgb(25, 162, 154) 95%);
   }
   .section-precios-producto-mob .div-container-precios-mob .diseño-precios-mob p {
-    margin: 0;
+    margin: 0rem 2rem;
     color: rgb(17, 102, 97);
     color: linear-gradient(90deg, rgb(17, 102, 97) 0%, rgb(29, 198, 188) 99%);
     font-weight: 400;
@@ -1158,12 +1113,181 @@ footer .section-footer .footer-options .footer-options-text:hover {
     text-decoration: line-through;
   }
   .section-precios-producto-mob .div-container-precios-mob .diseño-precios-final-mob p {
-    margin: 0;
+    margin: 0rem 2rem;
     color: rgb(20, 133, 126);
     color: linear-gradient(90deg, rgb(20, 133, 126) 10%, rgb(25, 162, 154) 50%, rgb(25, 162, 154) 70%, rgb(48, 255, 243) 100%);
     font-style: italic;
     font-weight: 500;
     font-size: 20px;
+  }
+  .section-precios-producto-mob .div-container-options-mob {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0rem;
+  }
+  .section-precios-producto-mob .div-container-options-mob .div-ind-mob {
+    color: white;
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 49.5%;
+    background: #19a29a;
+    background: linear-gradient(90deg, rgb(25, 162, 154) 0%, rgb(41, 223, 214) 20%, rgb(25, 162, 154) 50%, rgb(20, 133, 126) 80%);
+  }
+  .section-precios-producto-mob .div-container-options-mob .div-ind-mob .option-envios-mob {
+    text-align: center;
+    color: white;
+    width: 60%;
+    border: none;
+    border-radius: 25px;
+    background: rgb(25, 162, 154);
+    background: radial-gradient(circle, rgba(25, 162, 154, 0.6864784547) 50%, rgba(195, 224, 223, 0.3283803863) 100%);
+  }
+  .section-precios-producto-mob .btn-compra-mob {
+    width: 100%;
+    color: white;
+    border: 2px solid #19a29a;
+    padding: 4px;
+    border-radius: 10px;
+    background: #19a29a;
+    background: linear-gradient(90deg, rgb(25, 162, 154) 20%, rgb(41, 223, 214) 40%, rgb(41, 223, 214) 60%, rgb(25, 162, 154) 80%);
+    transition: 0.4s;
+  }
+  .section-precios-producto-mob .btn-compra-mob:hover {
+    color: #b3b3b3;
+    border: 2px solid #7e7e7e;
+  }
+  .section-pagos-mob {
+    display: flex;
+    margin: 0rem 2rem 2rem 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .section-pagos-mob .apartado-pagos-mob {
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    font-size: 12px;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #19a29a;
+  }
+  .section-pagos-mob .apartado-pagos-mob h4 {
+    font-size: 18px;
+    border-bottom: 2px solid white;
+  }
+  .section-pagos-mob .apartado-pagos-mob .contain-cuotas-mob {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .section-pagos-mob .apartado-pagos-mob .contain-cuotas-mob .img-pagos-mob {
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-pagos-mob .apartado-pagos-mob .contain-cuotas-mob .cuota-mob {
+    text-align: center;
+    margin: 6px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .section-mapa-detalle-mob {
+    color: white;
+    margin: 2rem;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #19a29a;
+    -webkit-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    -moz-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+  }
+  .section-mapa-detalle-mob .title-detalles-envios-mob {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin: 20px 0px;
+  }
+  .section-mapa-detalle-mob .title-detalles-envios-mob .img-envios-mob {
+    width: 25px;
+    margin: 0rem 1rem 0rem 0rem;
+  }
+  .section-mapa-detalle-mob .contenido-envios-mob {
+    font-size: 14px;
+    font-weight: 250;
+  }
+  .apartado-mapa-detalle-mob {
+    background-color: #19a29a;
+    color: white;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 10px;
+  }
+  .apartado-mapa-detalle-mob .title-mapa-mob {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+  }
+  .apartado-mapa-detalle-mob .mapa-envios-final-mob {
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(194, 194, 194);
+    -webkit-box-shadow: 0px 0px 12px 2px rgb(199, 199, 199);
+    -moz-box-shadow: 0px 0px 12px 2px rgb(199, 199, 199);
+    box-shadow: 0px 0px 12px 2px rgb(199, 199, 199);
+  }
+  .section-rel-products-mob {
+    color: white;
+    background-color: #19a29a;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    -moz-box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+    box-shadow: 0px 0px 46px 2px rgb(158, 158, 158);
+  }
+  .section-rel-products-mob .apartado-rel-products-mob {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+  .section-rel-products-mob .apartado-rel-products-mob .flex-contain-rel-products-mob {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .section-rel-products-mob .apartado-rel-products-mob .flex-contain-rel-products-mob .rel-products-details-mob {
+    width: 45%;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: center;
+    font-size: 16px;
+  }
+  .section-rel-products-mob .apartado-rel-products-mob .flex-contain-rel-products-mob .rel-products-details-mob p {
+    margin: 1rem 0rem;
+  }
+  .section-rel-products-mob .apartado-rel-products-mob .flex-contain-rel-products-mob .rel-products-details-mob .img-rel-product-mob {
+    width: 90%;
+    border-radius: 10px;
+  }
+  .section-rel-products-mob .apartado-rel-products-mob .flex-contain-rel-products-mob .rel-products-details-mob .rel-product-button-mob {
+    width: 80%;
+    color: white;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 2px solid rgb(182, 182, 182);
+    background-color: #19a29a;
+    transition: 0.2s;
+  }
+  .section-rel-products-mob .apartado-rel-products-mob .flex-contain-rel-products-mob .rel-products-details-mob .rel-product-button-mob:hover {
+    color: #19a29a;
+    background-color: #b3b3b3;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1180,6 +1304,24 @@ footer .section-footer .footer-options .footer-options-text:hover {
     display: none;
   }
   .title-section-envios-mob {
+    display: none;
+  }
+  .img-section-mob {
+    display: none;
+  }
+  .section-precios-producto-mob {
+    display: none;
+  }
+  .section-pagos-mob {
+    display: none;
+  }
+  .section-mapa-detalle-mob {
+    display: none;
+  }
+  .apartado-mapa-detalle-mob {
+    display: none;
+  }
+  .section-rel-products-mob {
     display: none;
   }
 }
