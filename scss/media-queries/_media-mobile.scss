@@ -280,7 +280,7 @@ box-shadow: 0px 0px 22px 7px rgba(41,160,155,1);
             color: rgb(17,102,97);
             color: linear-gradient(90deg, rgba(17,102,97,1) 0%, rgba(29,198,188,1) 99%);
             font-weight: 400;
-            font-size: 18px;
+            font-size: 12px;
             font-style: italic;
             text-decoration: line-through;
         }
@@ -290,7 +290,7 @@ box-shadow: 0px 0px 22px 7px rgba(41,160,155,1);
             color: linear-gradient(90deg, rgba(20,133,126,1) 10%, rgba(25,162,154,1) 50%, rgba(25,162,154,1) 70%, rgba(48,255,243,1) 100%);
             font-style: italic;
             font-weight: 500;
-            font-size: 20px; 
+            font-size: 16px; 
         }
     }
     .div-container-options-mob  {
@@ -299,7 +299,7 @@ box-shadow: 0px 0px 22px 7px rgba(41,160,155,1);
         margin: 1rem 0rem;
         .div-ind-mob    {
             color: white;
-            font-size: 14px;
+            font-size: 10px;
             padding: 4px;
             border-radius: 10px;
             display: flex;
@@ -358,14 +358,16 @@ box-shadow: 0px 0px 22px 7px rgba(41,160,155,1);
             justify-content: space-around;
             align-items: center;
             .img-pagos-mob  {
-                width: 50px;
+                width: 30px;
                 justify-content: center;
                 align-items: center;
             }
             .cuota-mob  {
+                display: flex;
+                flex-wrap: wrap;
                 text-align: center;
                 margin: 6px;
-                font-size: 14px;
+                font-size: 8px;
                 font-weight: 500;
             }
         }    
